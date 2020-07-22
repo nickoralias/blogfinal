@@ -1,6 +1,6 @@
 type Post @model {
   id: ID!
-  postOwnderId: String!
+  postOwnerId: String!
   postOwnerUsername: String!
   postTitle: String!
   postBody: String!

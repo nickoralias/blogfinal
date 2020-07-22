@@ -5,7 +5,7 @@ export const getPost = /* GraphQL */ `
   query GetPost($id: ID!) {
     getPost(id: $id) {
       id
-      postOwnderId
+      postOwnerId
       postOwnerUsername
       postTitle
       postBody
@@ -45,7 +45,7 @@ export const listPosts = /* GraphQL */ `
     listPosts(filter: $filter, limit: $limit, nextToken: $nextToken) {
       items {
         id
-        postOwnderId
+        postOwnerId
         postOwnerUsername
         postTitle
         postBody
@@ -70,7 +70,7 @@ export const getComment = /* GraphQL */ `
       commentOwnerUsername
       post {
         id
-        postOwnderId
+        postOwnerId
         postOwnerUsername
         postTitle
         postBody
@@ -102,7 +102,7 @@ export const listComments = /* GraphQL */ `
         commentOwnerUsername
         post {
           id
-          postOwnderId
+          postOwnerId
           postOwnerUsername
           postTitle
           postBody
@@ -126,7 +126,7 @@ export const getLike = /* GraphQL */ `
       likeOwnerUsername
       post {
         id
-        postOwnderId
+        postOwnerId
         postOwnerUsername
         postTitle
         postBody
@@ -158,7 +158,7 @@ export const listLikes = /* GraphQL */ `
         likeOwnerUsername
         post {
           id
-          postOwnderId
+          postOwnerId
           postOwnerUsername
           postTitle
           postBody

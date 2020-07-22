@@ -8,7 +8,7 @@ export const createPost = /* GraphQL */ `
   ) {
     createPost(input: $input, condition: $condition) {
       id
-      postOwnderId
+      postOwnerId
       postOwnerUsername
       postTitle
       postBody
@@ -46,7 +46,7 @@ export const updatePost = /* GraphQL */ `
   ) {
     updatePost(input: $input, condition: $condition) {
       id
-      postOwnderId
+      postOwnerId
       postOwnerUsername
       postTitle
       postBody
@@ -84,7 +84,7 @@ export const deletePost = /* GraphQL */ `
   ) {
     deletePost(input: $input, condition: $condition) {
       id
-      postOwnderId
+      postOwnerId
       postOwnerUsername
       postTitle
       postBody
@@ -126,7 +126,7 @@ export const createComment = /* GraphQL */ `
       commentOwnerUsername
       post {
         id
-        postOwnderId
+        postOwnerId
         postOwnerUsername
         postTitle
         postBody
@@ -156,7 +156,7 @@ export const updateComment = /* GraphQL */ `
       commentOwnerUsername
       post {
         id
-        postOwnderId
+        postOwnerId
         postOwnerUsername
         postTitle
         postBody
@@ -186,7 +186,7 @@ export const deleteComment = /* GraphQL */ `
       commentOwnerUsername
       post {
         id
-        postOwnderId
+        postOwnerId
         postOwnerUsername
         postTitle
         postBody
@@ -217,7 +217,7 @@ export const createLike = /* GraphQL */ `
       likeOwnerUsername
       post {
         id
-        postOwnderId
+        postOwnerId
         postOwnerUsername
         postTitle
         postBody
@@ -247,7 +247,7 @@ export const updateLike = /* GraphQL */ `
       likeOwnerUsername
       post {
         id
-        postOwnderId
+        postOwnerId
         postOwnerUsername
         postTitle
         postBody
@@ -277,7 +277,7 @@ export const deleteLike = /* GraphQL */ `
       likeOwnerUsername
       post {
         id
-        postOwnderId
+        postOwnerId
         postOwnerUsername
         postTitle
         postBody

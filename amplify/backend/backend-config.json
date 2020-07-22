@@ -1,20 +1,20 @@
 {
-	"api": {
-		"blogfinal": {
-			"service": "AppSync",
-			"providerPlugin": "awscloudformation",
-			"output": {
-				"authConfig": {
-					"additionalAuthenticationProviders": [],
-					"defaultAuthentication": {
-						"authenticationType": "API_KEY",
-						"apiKeyConfig": {
-							"description": "dev",
-							"apiKeyExpirationDays": 30
-						}
-					}
-				}
-			}
-		}
-	}
+    "api": {
+        "blogfinal": {
+            "service": "AppSync",
+            "providerPlugin": "awscloudformation",
+            "output": {
+                "authConfig": {
+                    "additionalAuthenticationProviders": [],
+                    "defaultAuthentication": {
+                        "authenticationType": "API_KEY",
+                        "apiKeyConfig": {
+                            "description": "blogapi",
+                            "apiKeyExpirationDays": 30
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

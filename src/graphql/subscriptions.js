@@ -5,7 +5,7 @@ export const onCreatePost = /* GraphQL */ `
   subscription OnCreatePost {
     onCreatePost {
       id
-      postOwnderId
+      postOwnerId
       postOwnerUsername
       postTitle
       postBody
@@ -40,7 +40,7 @@ export const onUpdatePost = /* GraphQL */ `
   subscription OnUpdatePost {
     onUpdatePost {
       id
-      postOwnderId
+      postOwnerId
       postOwnerUsername
       postTitle
       postBody
@@ -75,7 +75,7 @@ export const onDeletePost = /* GraphQL */ `
   subscription OnDeletePost {
     onDeletePost {
       id
-      postOwnderId
+      postOwnerId
       postOwnerUsername
       postTitle
       postBody
@@ -114,7 +114,7 @@ export const onCreateComment = /* GraphQL */ `
       commentOwnerUsername
       post {
         id
-        postOwnderId
+        postOwnerId
         postOwnerUsername
         postTitle
         postBody
@@ -141,7 +141,7 @@ export const onUpdateComment = /* GraphQL */ `
       commentOwnerUsername
       post {
         id
-        postOwnderId
+        postOwnerId
         postOwnerUsername
         postTitle
         postBody
@@ -168,7 +168,7 @@ export const onDeleteComment = /* GraphQL */ `
       commentOwnerUsername
       post {
         id
-        postOwnderId
+        postOwnerId
         postOwnerUsername
         postTitle
         postBody
@@ -196,7 +196,7 @@ export const onCreateLike = /* GraphQL */ `
       likeOwnerUsername
       post {
         id
-        postOwnderId
+        postOwnerId
         postOwnerUsername
         postTitle
         postBody
@@ -223,7 +223,7 @@ export const onUpdateLike = /* GraphQL */ `
       likeOwnerUsername
       post {
         id
-        postOwnderId
+        postOwnerId
         postOwnerUsername
         postTitle
         postBody
@@ -250,7 +250,7 @@ export const onDeleteLike = /* GraphQL */ `
       likeOwnerUsername
       post {
         id
-        postOwnderId
+        postOwnerId
         postOwnerUsername
         postTitle
         postBody
