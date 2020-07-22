@@ -1,20 +1,28 @@
 {
-    "api": {
-        "blogfinal": {
-            "service": "AppSync",
-            "providerPlugin": "awscloudformation",
-            "output": {
-                "authConfig": {
-                    "additionalAuthenticationProviders": [],
-                    "defaultAuthentication": {
-                        "authenticationType": "API_KEY",
-                        "apiKeyConfig": {
-                            "description": "blogapi",
-                            "apiKeyExpirationDays": 30
-                        }
-                    }
-                }
-            }
-        }
-    }
+	"api": {
+		"blogfinal": {
+			"service": "AppSync",
+			"providerPlugin": "awscloudformation",
+			"output": {
+				"authConfig": {
+					"additionalAuthenticationProviders": [],
+					"defaultAuthentication": {
+						"authenticationType": "API_KEY",
+						"apiKeyConfig": {
+							"description": "blogapi",
+							"apiKeyExpirationDays": 30
+						}
+					}
+				}
+			}
+		}
+	},
+	"auth": {
+		"blogfinalb8f5691e": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation",
+			"dependsOn": [],
+			"customAuth": false
+		}
+	}
 }
